@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Links with Javascript</title>
+</head>
+<body onload="linkModifier()">
+    <ul>
+        <li><a href="https://google.com/">Google</a></li>
+        <li><a href="https://www.nytimes.com">Ney Work Times</a></li>
+    </ul>
+    <script type="text/javascript">
+        function linkModifier() {
+            for( var i = 0; i < document.links.length; i++)
+            {
+                document.links[i].href = "http://example.com"
+            }
+        }
+    </script>
+</body>
+</html>
